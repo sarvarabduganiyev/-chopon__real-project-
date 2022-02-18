@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Prata", serif;
+  --logo-font: "Princess Sofia", cursive;
+}
+
+.logotip {
+  font-family: var(--logo-font);
+  color: #009997;
+}
+
+nav > a {
+  font-family: var(--main-font);
+}
+
+.number {
+  font-family: var(--main-font);
+}
+
+.languageBorder {
+  border: 1px solid #009997;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font);
+}
+
+.linkHover {
+  font-family: var(--main-font);
+}
+
+.linkHover:hover {
+  color: #009997;
+  text-shadow: 0.2px 0.2px 0.5px #000;
+  transition: 0.2s;
+}
+
+.linkMainColor {
+  font-family: var(--main-font);
+  color: #009997;
+}
+
+.contactLink {
+  color: #009997;
+  font-family: var(--main-font);
+}
+
+.contactTitle {
+  font-family: var(--main-font);
+}
+
+.contactMainTitle {
+  font-family: var(--main-font);
+}

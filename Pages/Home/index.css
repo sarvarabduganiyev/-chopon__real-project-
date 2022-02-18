@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Prata", serif;
+  --logo-font: "Princess Sofia", cursive;
+}
+
+.logotip {
+  font-family: var(--logo-font);
+  color: #009997;
+}
+
+nav > a {
+  font-family: var(--main-font);
+}
+
+.bgOfDiv {
+  background-color: #fafafa;
+}
+
+#number {
+  font-family: var(--main-font);
+}
+
+.languageBorder {
+  border: 1px solid #009997;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font);
+}
+.main__sarlavha{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 41px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.linkHover {
+  font-family: var(--main-font);
+}
+
+.mainFont {
+  font-family: var(--main-font);
+  /* color: #009997; */
+  /* font-family: Prata; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  /* line-height: 28px; */
+  margin: 20px 0px;
+  /* color: #000000; */
+}
+
+.linkMainColor {
+  font-family: var(--main-font);
+  color: #009997;
+}
+
+.linkHover:hover {
+  color: #009997;
+  text-shadow: 0.2px 0.2px 0.5px #000;
+  transition: 0.2s;
+}
+
+/* ========================== */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+#swiper {
+  background-image: url("../../Media/milliy-bg-yashil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #068684;
+}
+
+.swiper {
+  height: 400px;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+  font-size: 20px;
+}
+#paginator{
+  display: none;
+}
+.linkMainColor{
+  margin-top: 30px;
+}
+
+
+@media(max-width:500px) {
+  .swiper__btn{
+    display: none;
+  }
+  /* .swiper__carta{
+   
+    
+  }
+  .swiper-wrapper__carta{
+    width: 100%;
+  } */
+.swiper__card__text{
+  width: 80%;
+  margin: 0 auto;
+}
+  #swiper div > div{
+    width: 100%;
+  }
+  #swiper div {
+    width: 90%;
+  }
+  .mainFonts {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 20px 0px;
+    /* color: #000000; */
+  }
+}
+@media(max-width:400px) {
+  .mainBtn{
+    padding: 8px 30px;
+    margin-bottom: 30px !important;
+  }
+  .eto__intersno{
+    font-size: 25px !important;
+  }
+}
+/* @media(max-width:800px) {
+  .main__sarlavha{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+} */
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="En">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chopon | Каталог</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./catalogue.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Inter&family=Poppins&family=Prata&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Inter&family=Poppins&family=Prata&family=Princess+Sofia&family=Ubuntu&display=swap" rel="stylesheet">
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header>
+      <div id="headerInner" class="max-w-[1000px] mx-auto flex items-center justify-center md:justify-between py-4 px-6">
+        <div class="flex items-center space-x-16">
+          <div id="logo"><a href="./index.html" class="logotip text-[30px] md:text-[40px] lg:text-[50px]">Chopon</a></div>
+          <nav class="md:flex space-x-4 lg:space-x-6 hidden">
+            <a class="linkHover lg:text-lg md:text-[14px]" href="../Home/indexEnglish.html">Home</a>  
+            <a class="linkHover lg:text-lg md:text-[14px] border-b border-b-2 border-black" href="../Catalogue/catalogueEnglish.html">Catalogue</a>  
+            <a class="linkHover lg:text-lg md:text-[14px]" href="../Blog/blogEnglish.html">Blog</a>  
+            <a class="linkHover lg:text-lg md:text-[14px]" href="../Contact/contactEnglish.html">Contacts</a>  
+          </nav>
+        </div>
+        <div class="flex items-center space-x-6">
+          <div id="language" class="md:flex items-center space-x-2 hidden">
+            <div class="md:w-8 lg:w-10 lg:h-10 md:h-8 lg:w-10 lg:h-10 hover:rounded-full flex justify-center items-center linkHover hover:bg-gray-200 cursor-pointer"><a class="langChanger" href="./catalogue.html">Py</a></div>
+            <div class="md:w-8 lg:w-10 lg:h-10 md:h-8 lg:w-10 lg:h-10 languageBorder hover:rounded-full flex justify-center items-center linkHover hover:bg-gray-200 cursor-pointer"><a class="langChanger" href="./catalogueEnglish.html">En</a></div> 
+          </div>
+          <a href="tel:+998 90 989 9889" class="linkHover hidden md:block lg:text-[18px]" id="number">+998 90 989 9889</a>  
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block md:hidden absolute right-6 menuSvg z-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div> 
+    </header>
+    <div class="mobileMenu hidden fixed max-h-screen inset-0 overflow-hidden bg-white z-30">
+      <div class="mobileNavigation flex flex-col space-y-6 mt-24 px-10">
+        <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="../Home/indexEnglish.html">Home</a>  
+        <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="../Catalogue/catalogueEnglish.html">Catalogue</a>  
+        <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="../Blog/blogEnglish.html">Blog</a>  
+        <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="../Contact/contactEnglish.html">Contacts</a>  
+        <div class="flex items-center space-x-6">
+          <div class="w-10 h-10 linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer"><a href="./catalogue.html">Py</a></div>
+          <div class="w-10 h-10 linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer languageBorder"><a href="./catalogueEnglish.html">En</a></div>
+        </div>
+      </div>
+    </div>      
+
+    <main class="flex-auto my-6">
+      <div id="mainSectionInner" class="max-w-[1000px] mx-auto px-6">
+        <div id="title" class="border-b border-b-2 border-black">
+          <h1 class="title text-black text-[40px] lg:text-[50px] text-center md:text-left">Catalogue</h1>
+        </div>
+        <div class="grid md:grid-cols-2 space-y-4 py-6">
+          <p class="mainFont text-black text-[22px] md:text-[36px] text-center md:text-left font-semibold md:font-medium">Chapan</p>
+          <p class="mainFont text-black text-justify">Chapan is a caftan worn by men and women over clothing, usually during the cold winter months. It is popular in Central Asia, including Uzbekistan <span class="hidden md:block">Afghanistan, Tajikistan, Kazakhstan, Kyrgyzstan and other neighboring countries. They sew a chapan on wadding or camel wool with a cotton lining.</span></p>
+        </div>
+        <div class="chapans grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon1.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon2.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon3.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon4.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon5.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- ================================ -->
+        <div class="grid md:grid-cols-2 space-y-6 md:space-y-0 py-6">
+          <p class="mainFont text-black text-[22px] md:text-[36px] text-center md:text-left font-semibold md:font-medium">Jaynamaz</p>
+          <p class="mainFont text-black text-justify">Chapan is a caftan worn by men and women over clothing, usually during the cold winter months. It is popular in Central Asia, including Uzbekistan.</p>
+        </div>
+        <div class="chapans grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon1.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon2.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>  
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon3.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 space-y-6 md:space-y-0 py-6">
+          <p class="mainFont text-black text-[22px] md:text-[36px] text-center md:text-left font-semibold md:font-medium">Chakman</p>
+          <p class="mainFont text-black text-justify">Chapan is a caftan worn by men and women over clothing, usually during the cold winter months. It is popular in Central Asia, including Uzbekistan.</p>
+        </div>
+        <div class="chapans grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon1.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon2.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+          <div class="w-full bg-gray-100">
+            <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+              <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon3.png" alt="Chopon"></a>
+            </div>
+            <div class="chapanInfo flex flex-col justify-center items-center py-2">
+              <p class="mainFont text-black">Zar-zar chapan</p>
+              <a class="mainFont text-[14px] hover:underline" href="#">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <hr>
+    <footer>
+      <div id="footerInner" class="max-w-[1000px] mx-auto flex space-x-2 justify-between items-center py-6 px-6">
+        <p class="text-[8px] sm:text-[10px] md:text-[16px] w-[100px] sm:w-auto linkMainColor text-black">National clothing store</p>
+        <div id="FTlogo"><a href="./index.html" class="logotip text-black text-[20px] md:text-[30px] md:text-[50px]">Chopon</a></div>
+        <a href="#" class="linkHover text-[8px] sm:text-[10px] md:text-[16px] number">+998 90 989 9889</a>
+      </div>  
+    </footer> 
+
+    <script src="../../main.js"></script>
+  </body>
+</html>
