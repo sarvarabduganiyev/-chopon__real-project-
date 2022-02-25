@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chopon | Блог</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style/blog.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Inter&family=Poppins&family=Prata&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Inter&family=Poppins&family=Prata&family=Princess+Sofia&family=Ubuntu&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <header>
+    <div id="headerInner" class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center space-x-16">
+        <div id="logo"><a href="./index.html" class="logotip text-[30px] md:text-[40px] lg:text-[50px]">Chopon</a></div>
+        <nav class="md:flex space-x-4 lg:space-x-6 hidden">
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./index.html">Глaвнaя</a>
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./catalogue.html">Kaтaлoг</a>
+          <a class="linkHover lg:text-lg md:text-[14px] border-b border-b-2 border-black"
+            href="../Blog/blog.html">Блoг</a>
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./contact.html">Koнтaкты</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-6">
+        <div id="language" class="md:flex items-center space-x-2 hidden">
+          <div
+            class="md:w-8 lg:w-10 lg:h-10 md:h-8 lg:w-10 lg:h-10 hover:rounded-full flex justify-center items-center languageBorder linkHover hover:bg-gray-200 cursor-pointer">
+            <a class="langChanger" href="./blog.html">Py</a>
+          </div>
+          <div
+            class="md:w-8 lg:w-10 lg:h-10 md:h-8 lg:w-10 lg:h-10 hover:rounded-full flex justify-center items-center linkHover hover:bg-gray-200 cursor-pointer">
+            <a class="langChanger" href="./blogEnglish.html">En</a>
+          </div>
+        </div>
+        <a href="tel:+998909899889" class="linkHover hidden md:block lg:text-[18px]" id="number">+998 90 989 9889</a>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block md:hidden absolute right-6 menuSvg z-50" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
+  </header>
+  <div class="mobileMenu hidden fixed max-h-screen inset-0 overflow-hidden bg-white z-30">
+    <div class="mobileNavigation flex flex-col space-y-6 mt-24 px-10">
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./index.html">Глaвнaя</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./catalogue.html">Kaтaлoг</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./blog.html">Блoг</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./contact.html">Koнтaкты</a>
+      <div class="flex items-center space-x-6">
+        <div
+          class="w-10 h-10 linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer languageBorder">
+          <a href="./blog.html">Py</a>
+        </div>
+        <div
+          class="w-10 h-10 linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer">
+          <a href="./blogEnglish.html">En</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-auto py-6">
+    <h1 class="max-w-[1200px] mx-auto px-6 linkMainColor lg:text-[50px] text-[40px] text-center md:text-left">Блoг</h1>
+    <div class="swiper-wrapper max-w-[1200px] mx-auto grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 px-6 gap-6 pt-8">
+      <div class="swiper-slide flex flex-col">
+        <div style="height: 240px;" class="relative">
+          <img class="absolute w-full h-full object-fill" src="./img/chopon1.png" alt="rasm">
+        </div>
+        <div class="bg-white  flex flex-col space-y-2 justify-center items-center p-4">
+          <p style="height: 42px;" class=" mainFont h-8 w-full  __qator2 text-black text-[14px] text-center">
+            Chapan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates doloribus veniam ratione
+            ab consequatur perferendis odit non, rerum pariatur aperiam, repellendus, tempore mollitia totam impedit
+            consequuntur enim. Nemo, sit! </p>
+          <a href="./blogDetails.html"><button
+              class="hover:bg-gray-200 __qator1 transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black text-[14px] px-16 py-2">Read</button></a>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col">
+        <div style="height: 240px;" class="relative">
+          <img class="absolute w-full h-full object-fill" src="./img/chopon2.png" alt="rasm">
+        </div>
+        <div class="bg-white  flex flex-col space-y-2 justify-center items-center p-4">
+          <p style="height: 42px;" class=" mainFont h-8 w-full  __qator2 text-black text-[14px] text-center">
+            Chapan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates doloribus veniam ratione
+            ab consequatur perferendis odit non, rerum pariatur aperiam, repellendus, tempore mollitia totam impedit
+            consequuntur enim. Nemo, sit! </p>
+          <a href="./blogDetails.html"><button
+              class="hover:bg-gray-200 __qator1 transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black text-[14px] px-16 py-2">Read</button></a>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col">
+        <div style="height: 240px;" class="relative">
+          <img class="absolute w-full h-full object-fill" src="./img/chopon3.png" alt="rasm">
+        </div>
+        <div class="bg-white  flex flex-col space-y-2 justify-center items-center p-4">
+          <p style="height: 42px;" class=" mainFont h-8 w-full  __qator2 text-black text-[14px] text-center">
+            Chapan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates doloribus veniam ratione
+            ab consequatur perferendis odit non, rerum pariatur aperiam, repellendus, tempore mollitia totam impedit
+            consequuntur enim. Nemo, sit! </p>
+          <a href="./blogDetails.html"><button
+              class="hover:bg-gray-200 __qator1 transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black text-[14px] px-16 py-2">Read</button></a>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col">
+        <div style="height: 240px;" class="relative">
+          <img class="absolute w-full h-full object-fill" src="./img/chopon3.png" alt="rasm">
+        </div>
+        <div class="bg-white  flex flex-col space-y-2 justify-center items-center p-4">
+          <p style="height: 42px;" class=" mainFont h-8 w-full  __qator2 text-black text-[14px] text-center">
+            Chapan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates doloribus veniam ratione
+            ab consequatur perferendis odit non, rerum pariatur aperiam, repellendus, tempore mollitia totam impedit
+            consequuntur enim. Nemo, sit! </p>
+          <a href="./blogDetails.html"><button
+              class="hover:bg-gray-200 __qator1 transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black text-[14px] px-16 py-2">Read</button></a>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col">
+        <div style="height: 240px;" class="relative">
+          <img class="absolute w-full h-full object-fill" src="./img/chopon5.png" alt="rasm">
+        </div>
+        <div class="bg-white  flex flex-col space-y-2 justify-center items-center p-4">
+          <p style="height: 42px;" class=" mainFont h-8 w-full  __qator2 text-black text-[14px] text-center">
+            Chapan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates doloribus veniam ratione
+            ab consequatur perferendis odit non, rerum pariatur aperiam, repellendus, tempore mollitia totam impedit
+            consequuntur enim. Nemo, sit! </p>
+          <a href="./blogDetails.html"><button
+              class="hover:bg-gray-200 __qator1 transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black text-[14px] px-16 py-2">Read</button></a>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col">
+        <div style="height: 240px;" class="relative">
+          <img class="absolute w-full h-full object-fill" src="./img/ton1.png" alt="rasm">
+        </div>
+        <div class="bg-white  flex flex-col space-y-2 justify-center items-center p-4">
+          <p style="height: 42px;" class=" mainFont h-8 w-full  __qator2 text-black text-[14px] text-center">
+            Chapan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates doloribus veniam ratione
+            ab consequatur perferendis odit non, rerum pariatur aperiam, repellendus, tempore mollitia totam impedit
+            consequuntur enim. Nemo, sit! </p>
+          <a href="./blogDetails.html"><button
+              class="hover:bg-gray-200 __qator1 transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black text-[14px] px-16 py-2">Read</button></a>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col">
+        <div style="height: 240px;" class="relative">
+          <img class="absolute w-full h-full object-fill" src="./img/ton2.png" alt="rasm">
+        </div>
+        <div class="bg-white  flex flex-col space-y-2 justify-center items-center p-4">
+          <p style="height: 42px;" class=" mainFont h-8 w-full  __qator2 text-black text-[14px] text-center">
+            Chapan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates doloribus veniam ratione
+            ab consequatur perferendis odit non, rerum pariatur aperiam, repellendus, tempore mollitia totam impedit
+            consequuntur enim. Nemo, sit! </p>
+          <a href="./blogDetails.html"><button
+              class="hover:bg-gray-200 __qator1 transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black text-[14px] px-16 py-2">Read</button></a>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col">
+        <div style="height: 240px;" class="relative">
+          <img class="absolute w-full h-full object-fill" src="./img/ton3.png" alt="rasm">
+        </div>
+        <div class="bg-white  flex flex-col space-y-2 justify-center items-center p-4">
+          <p style="height: 42px;" class=" mainFont h-8 w-full  __qator2 text-black text-[14px] text-center">
+            Chapan Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates doloribus veniam ratione
+            ab consequatur perferendis odit non, rerum pariatur aperiam, repellendus, tempore mollitia totam impedit
+            consequuntur enim. Nemo, sit! </p>
+          <a href="./blogDetails.html"><button
+              class="hover:bg-gray-200 __qator1 transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black text-[14px] px-16 py-2">Read</button></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="flex footer__div max-w-[1200px] mx-auto justify-between py-6 items-center">
+      <div>
+        <p class="linkHover footer__p __qator1">Магазин национальной одежды</p>
+      </div>
+      <div>
+        <img class="footer__img" src="./img/Chopon.png" alt="chopon_Logo">
+      </div>
+      <div>
+        <a href="tel:+998909899889" class="linkHover __qator1 block footer__a" id="number">+998 90 989 9889
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

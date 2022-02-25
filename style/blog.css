@@ -27,6 +27,33 @@ footer {
   font-family: var(--logo-font);
   color: #009997;
 }
+.__qator3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.__qator2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.__qator1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}.__qator6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
 
 nav > a {
   font-family: var(--main-font);
@@ -92,3 +119,26 @@ nav > a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media(max-width:800px) {
+  .footer__img{
+    width: 100px;
+  }
+  .footer__a{
+    font-size: 15px;
+  }
+  .footer__p{
+    font-size: 15px;
+  }
+  }
+  
+  @media(max-width:715px) {
+    .footer__div{
+      flex-direction: column;
+    }
+    .footer__img{
+      margin-top: 18px;
+    }
+    .footer__a{
+      margin-top: 18px;
+    }
+  }

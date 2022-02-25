@@ -32,6 +32,17 @@ nav > a {
   align-items: center;
   font-family: var(--main-font);
 }
+#socialMedia{
+  display: block !important;
+}
+.contact__tarmoq__sarlavha{
+  font-family: var(--main-font);  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: #646464;
+}
 
 .linkHover {
   font-family: var(--main-font);
@@ -60,3 +71,29 @@ nav > a {
 .contactMainTitle {
   font-family: var(--main-font);
 }
+
+
+
+@media(max-width:800px) {
+  .footer__img{
+    width: 100px;
+  }
+  .footer__a{
+    font-size: 15px;
+  }
+  .footer__p{
+    font-size: 15px;
+  }
+  }
+  
+  @media(max-width:715px) {
+    .footer__div{
+      flex-direction: column;
+    }
+    .footer__img{
+      margin-top: 18px;
+    }
+    .footer__a{
+      margin-top: 18px;
+    }
+  }

@@ -16,20 +16,20 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./style/index.css">
 </head>
 
 <body class="flex flex-col min-h-screen">
   <header>
-    <div id="headerInner" class="max-w-[1000px] mx-auto flex items-center justify-center md:justify-between py-4 px-6">
+    <div id="headerInner" class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6">
       <div class="flex items-center space-x-16">
         <div id="logo"><a href="./index.html" class="logotip text-[30px] md:text-[40px] lg:text-[50px]">Chopon</a></div>
         <nav class="md:flex space-x-4 lg:space-x-6 hidden">
           <a class="linkHover lg:text-lg md:text-[14px] border-b border-b-2 border-black"
-            href="../Home/index.html">Глaвнaя</a>
-          <a class="linkHover lg:text-lg md:text-[14px]" href="../Catalogue/catalogue.html">Kaтaлoг</a>
-          <a class="linkHover lg:text-lg md:text-[14px]" href="../Blog/blog.html">Блoг</a>
-          <a class="linkHover lg:text-lg md:text-[14px]" href="../Contact/contact.html">Koнтaкты</a>
+            href="./index.html">Глaвнaя</a>
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./catalogue.html">Kaтaлoг</a>
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./blog.html">Блoг</a>
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./contact.html">Koнтaкты</a>
         </nav>
       </div>
       <div class="flex items-center space-x-6">
@@ -43,7 +43,7 @@
             <a class="langChanger" href="./indexEnglish.html">En</a>
           </div>
         </div>
-        <a href="tel:+998 90 989 9889" class="linkHover hidden md:block lg:text-[18px]" id="number">+998 90 989 9889</a>
+        <a href="tel:+998909899889" class="linkHover hidden md:block lg:text-[18px]" id="number">+998 90 989 9889</a>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block md:hidden absolute right-6 menuSvg z-50" fill="none"
         viewBox="0 0 24 24" stroke="currentColor">
@@ -54,11 +54,11 @@
 
   <div class="mobileMenu hidden fixed max-h-screen inset-0 overflow-hidden bg-white z-30">
     <div class="mobileNavigation flex flex-col space-y-6 mt-20 px-10">
-      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="../Home/index.html">Глaвнaя</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./index.html">Глaвнaя</a>
       <a style="margin: -2px;" class="linkHover lg:text-lg md:text-[14px] mb-6 mainFont text-black"
-        href="../Catalogue/catalogue.html">Kaтaлoг</a>
-      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="../Blog/blog.html">Блoг</a>
-      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="../Contact/contact.html">Koнтaкты</a>
+        href="./catalogue.html">Kaтaлoг</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./blog.html">Блoг</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./contact.html">Koнтaкты</a>
       <div class="flex items-center space-x-6">
         <div
           class="w-10 h-10 linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer languageBorder">
@@ -73,12 +73,9 @@
   </div>
 
   <main class="flex-auto pt-8">
-    <section class="max-w-[1000px] mx-auto px-6">
+    <section class="max-w-[1200px] mx-auto px-6">
       <div id="landing" class="grid md:grid-cols-2 relative space-y-6 md:space-y-0">
         <div class="flex flex-col justify-center md:block">
-          <!-- <div>
-            <h1 class="main__sarlavha">Узбекский национальный <span class="linkMainColor">Чапан</span></h1>
-          </div> -->
           <p
             class="mainFont text-black text-center md:text-left text-[20px] md:text-[30px] md:max-w-[300px] lg:text-[45px] lg:max-w-[500px] uppercase">
             <span>Узбекский</span>
@@ -87,208 +84,218 @@
           </p>
           <button
             class="transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black px-4 py-2 lg:px-6 lg:py-3 mt-8 hover:bg-gray-200"><a
-              href="../Catalogue/catalogue.html">Вся коллекция</a></button>
+              href="./catalogue.html">Вся коллекция</a></button>
         </div>
         <div class="hidden md:block">
           <img class="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[380px] object-cover"
-            src="../../Media/chopon2.png" alt="Chopon">
+            src="./img/chopon2.png" alt="Chopon">
           <img
-            class="md:absolute md:-bottom-12 md:right-0 h-[200px] w-[200px] md:h-[250px] md:w-[250px] lg:h-[280px] lg:w-[250px] object-cover"
-            src="../../Media/chopon1.png" alt="Chopon">
+            class="md:absolute abs__img__2  md:-bottom-12 md:right-[12%] h-[200px] w-[200px] md:h-[250px] md:w-[250px] lg:h-[280px] lg:w-[250px] object-cover"
+            src="./img/chopon1.png" alt="Chopon">
         </div>
       </div>
     </section>
 
-    <section class="max-w-[1000px] mx-auto px-6 mt-6 md:mt-28">
+    <section class="max-w-[1200px] mx-auto px-6 mt-6 md:mt-28">
       <div class="chapans grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon1.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon1.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon2.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/ton1.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon3.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon2.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
 
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon5.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon3.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon2.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon4.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon4.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon5.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
 
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon1.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon1.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon5.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon2.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="w-full bg-gray-100">
+        <div class="w-full h-[450px] bg-gray-100">
           <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
-            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="../../Media/chopon3.png"
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon3.png"
                 alt="Chopon"></a>
           </div>
-          <div class="chapanInfo flex flex-col justify-center items-center py-2">
-            <p class="mainFont text-black">Зар-зар чопон</p>
-            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+
+          <div class="flex  flex-col justify-center  items-center w-full h-24">
+            <p class="card__main text-black __qator1">Зар-зар чопон</p>
+            <a class="card__main__a  hover:underline __qator1" href="#">Подробнее</a>
           </div>
         </div>
       </div>
       <div class="flex justify-center items-center">
         <button
-          class="transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black px-6 py-3 mt-8 hover:bg-gray-200"><a
-            href="../Catalogue/catalogue.html">Вся коллекция</a></button>
+          class="transition ease-in-out hover:-translate-1 hover:scale-105 mainFont text-black border border-black px-6 py-3 mt-8 hover:bg-gray-200 __qator1"><a
+            href="./catalogue.html">Вся коллекция</a></button>
       </div>
     </section>
 
     <section id="swiper" class="mt-10 ">
       <div class="w-11/12 mx-auto ">
         <div class="w-10/12 mx-auto relative">
-          <h1 class="text-[30px] eto__intersno md:text-[40px] lg:text-[50px] text-white px-6 mainFont py-4">Это
+          <h1 class="text-[30px] eto__intersno md:text-[40px] lg:text-[50px] text-white px-6 mainFont __qator1 py-4">Это
             интересно</h1>
           <div class="swiper mySwiper px-6 pt-2 pb-10">
             <div class="swiper-wrapper swiper-wrapper__carta">
               <div class="swiper-slide swiper__carta w-full flex flex-col">
                 <div style="height:250px" class="w-full relative">
-                  <img class="absolute w-full h-full object-cover" src="../../Media/ton3.png" alt="rasm">
+                  <img class="absolute w-full h-full object-cover" src="./img/chopon1.png" alt="rasm">
                 </div>
                 <div class="bg-white w-11/12 mx-auto flex flex-col space-y-2 justify-center items-center">
-                  <p class="mainFonts swiper__card__text  text-center">Чапа́н — кафтан, который мужчины и женщины
+                  <p class="mainFonts swiper__card__text  text-center __qator3">Чапа́н — кафтан, который мужчины и
+                    женщины
                     носят
                     поверх одежды, как правило</p>
-                  <div class="my-12">
+                  <div class="my-12 flex flex-col justify-center items-center">
                     <button style="margin-bottom: 30px;"
-                      class="hover:bg-gray-200  px-16 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts text-black border border-black">Читать</button>
+                      class="hover:bg-gray-200  px-16 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts text-black __qator1 border border-black">Читать</button>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide flex flex-col">
                 <div style="height:250px" class="w-full relative">
-                  <img class="absolute w-full h-full object-cover" src="../../Media/ton3.png" alt="rasm">
+                  <img class="absolute w-full h-full object-cover" src="./img/ton3.png" alt="rasm">
                 </div>
                 <div class="bg-white w-11/12 mx-auto flex flex-col space-y-2 justify-center items-center">
-                  <p class="mainFonts text-center">Чапа́н — кафтан, который мужчины и женщины
+                  <p class="mainFonts __qator3 text-center">Чапа́н — кафтан, который мужчины и женщины
                     носят
                     поверх одежды, как правило</p>
-                  <div class="my-12">
+                  <div class="my-12 flex flex-col justify-center items-center">
                     <button style="margin-bottom: 30px;"
-                      class="hover:bg-gray-200  md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black">Читать</button>
+                      class="hover:bg-gray-200  md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 __qator1 mainFonts mainBtn text-black border border-black">Читать</button>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide flex flex-col">
                 <div style="height:250px" class="w-full relative">
-                  <img class="absolute w-full h-full object-cover" src="../../Media/ton2.png" alt="rasm">
+                  <img class="absolute w-full h-full object-cover" src="./img/ton2.png" alt="rasm">
                 </div>
                 <div class="bg-white w-11/12 mx-auto flex flex-col space-y-2 justify-center items-center">
-                  <p class="mainFonts text-center">Чапа́н — кафтан, который мужчины и женщины
+                  <p class="mainFonts __qator3 text-center">Чапа́н — кафтан, который мужчины и женщины
                     носят
                     поверх одежды, как правило</p>
-                  <div class="my-12">
+                  <div class="my-12 flex flex-col justify-center items-center">
                     <button style="margin-bottom: 30px;"
-                      class="hover:bg-gray-200 md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black">Читать</button>
+                      class="hover:bg-gray-200 md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black __qator1">Читать</button>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide flex flex-col">
                 <div style="height:250px" class="w-full relative">
-                  <img class="absolute w-full h-full object-cover" src="../../Media/ton3.png" alt="rasm">
+                  <img class="absolute w-full h-full object-cover" src="./img/ton3.png" alt="rasm">
                 </div>
                 <div class="bg-white w-11/12 mx-auto flex flex-col space-y-2 justify-center items-center">
-                  <p class="mainFonts text-center">Чапа́н — кафтан, который мужчины и женщины
+                  <p class="mainFonts __qator3 text-center">Чапа́н — кафтан, который мужчины и женщины
                     носят
                     поверх одежды, как правило</p>
-                  <div class="my-12">
+                  <div class="my-12 flex flex-col justify-center items-center">
                     <button style="margin-bottom: 30px;"
-                      class="hover:bg-gray-200 md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black">Читать</button>
+                      class="hover:bg-gray-200 md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black __qator1">Читать</button>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide flex flex-col">
                 <div style="height:250px" class="w-full relative">
-                  <img class="absolute w-full h-full object-cover" src="../../Media/ton1.png" alt="rasm">
+                  <img class="absolute w-full h-full object-cover" src="./img/ton2.png" alt="rasm">
                 </div>
                 <div class="bg-white w-11/12 mx-auto flex flex-col space-y-2 justify-center items-center">
-                  <p class="mainFonts text-center">Чапа́н — кафтан, который мужчины и женщины
+                  <p class="mainFonts __qator3 text-center">Чапа́н — кафтан, который мужчины и женщины
                     носят
                     поверх одежды, как правило</p>
-                  <div class="my-12">
+                  <div class="my-12 flex flex-col justify-center items-center">
                     <button style="margin-bottom: 30px;"
-                      class="hover:bg-gray-200  md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black">Читать</button>
+                      class="hover:bg-gray-200  md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black __qator1">Читать</button>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide flex flex-col">
                 <div style="height:250px" class="w-full relative">
-                  <img class="absolute w-full h-full object-cover" src="../../Media/ton2.png" alt="rasm">
+                  <img class="absolute w-full h-full object-cover" src="./img/ton2.png" alt="rasm">
                 </div>
                 <div class="bg-white w-11/12 mx-auto flex flex-col space-y-2 justify-center items-center">
-                  <p class="mainFonts text-center">Чапа́н — кафтан, который мужчины и женщины
+                  <p class="mainFonts __qator3 text-center">Чапа́н — кафтан, который мужчины и женщины
                     носят
                     поверх одежды, как правило</p>
-                  <div class="my-12">
+                  <div class="my-12 flex flex-col justify-center items-center">
                     <button style="margin-bottom: 30px;"
-                      class="hover:bg-gray-200  md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black">Читать</button>
+                      class="hover:bg-gray-200  md:px-16 px-12 py-2  transition ease-in-out hover:-translate-1 hover:scale-105 mainFonts mainBtn text-black border border-black __qator1">Читать</button>
                   </div>
                 </div>
               </div>
@@ -307,18 +314,24 @@
     </section>
   </main>
 
+
   <footer>
-    <div id="footerInner" class="max-w-[1000px] mx-auto flex space-x-2 justify-center relative items-center py-6 px-6">
-      <p class="text-[8px] sm:text-[10px] md:text-[14px] w-[100px] sm:w-auto linkMainColor text-black absolute left-6">
-        Магазин национальной одежды </p>
-      <div id="logo"><a href="./index.html"
-          class="logotip text-black text-[20px] md:text-[30px] md:text-[50px]">Chopon</a></div>
-      <a href="tel:+998 90 989 9889" class="linkHover text-[8px] sm:text-[10px] md:text-[16px] absolute right-6"
-        id="number">+998 90 989 9889</a>
+    <div class="flex footer__div max-w-[1200px] mx-auto justify-between py-6 items-center">
+      <div>
+        <p class="linkHover footer__p __qator1">Магазин национальной одежды</p>
+      </div>
+      <div>
+        <img class="footer__img" src="./img/Chopon.png" alt="chopon_Logo">
+      </div>
+      <div>
+        <a href="tel:+998909899889" class="linkHover __qator1 block footer__a" id="number">+998 90 989 9889
+        </a>
+      </div>
     </div>
   </footer>
+
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="../../main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chopon | Каталог</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style/catalogue.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Inter&family=Poppins&family=Prata&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Inter&family=Poppins&family=Prata&family=Princess+Sofia&family=Ubuntu&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <header>
+    <div id="headerInner" class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center space-x-16">
+        <div id="logo"><a href="./index.html" class="logotip text-[30px] md:text-[40px] lg:text-[50px]">Chopon</a></div>
+        <nav class="md:flex space-x-4 lg:space-x-6 hidden">
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./index.html">Глaвнaя</a>
+          <a class="linkHover lg:text-lg md:text-[14px] border-b border-b-2 border-black"
+            href="../Catalogue/catalogue.html">Kaтaлoг</a>
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./blog.html">Блoг</a>
+          <a class="linkHover lg:text-lg md:text-[14px]" href="./contact.html">Koнтaкты</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-6">
+        <div id="language" class="md:flex items-center space-x-2 hidden">
+          <div
+            class="md:w-8 lg:w-10 lg:h-10 md:h-8 lg:w-10 lg:h-10 languageBorder linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer">
+            <a class="langChanger" href="./catalogue.html">Py</a>
+          </div>
+          <div
+            class="md:w-8 lg:w-10 lg:h-10 md:h-8 lg:w-10 lg:h-10 linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer">
+            <a class="langChanger" class="linkHover" href="./catalogueEnglish.html">En</a>
+          </div>
+        </div>
+        <a href="tel:+998909899889" class="linkHover hidden md:block lg:text-[18px]" id="number">+998 90 989 9889</a>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block md:hidden absolute right-6 menuSvg z-50" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
+  </header>
+  <div class="mobileMenu hidden fixed max-h-screen inset-0 overflow-hidden bg-white z-30">
+    <div class="mobileNavigation flex flex-col space-y-6 mt-24 px-10">
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./index.html">Глaвнaя</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./catalogue.html">Kaтaлoг</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./blog.html">Блoг</a>
+      <a class="linkHover lg:text-lg md:text-[14px] mainFont text-black" href="./contact.html">Koнтaкты</a>
+      <div class="flex items-center space-x-6">
+        <div
+          class="w-10 h-10 linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer languageBorder">
+          <a href="./catalogue.html">Py</a>
+        </div>
+        <div
+          class="w-10 h-10 linkHover hover:rounded-full flex justify-center items-center hover:bg-gray-200 cursor-pointer">
+          <a href="./catalogueEnglish.html">En</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-auto my-6">
+    <div id="mainSectionInner" class="max-w-[1200px] mx-auto px-6">
+      <div id="title" class="border-b border-b-2 border-black">
+        <h1 class="title text-black text-[40px] lg:text-[50px] text-center md:text-left">Каталог</h1>
+      </div>
+      <div class="grid md:grid-cols-2 space-y-4 py-6">
+        <p class="mainFont text-black text-[22px] md:text-[36px] text-center md:text-left font-semibold md:font-medium">
+          Чaпaн</p>
+        <p class="mainFont text-black text-justify __qator6">Чапа́н — кафтан, который мужчины и женщины носят поверх
+          одежды, как
+          правило, в течение холодных зимних месяцев. Он популярен в Центральной Азии, включая Узбекистан <span
+            class="hidden md:block">Афганистан, Таджикистан, Казахстан, Киргизию и другие соседние страны. Шьют чапан на
+            вате или на верблюжьей шерсти с ситцевой подкладкой.</span></p>
+      </div>
+      <div class="chapans grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/ton1.png">
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon2.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon3.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon4.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon5.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- ================================ -->
+      <div class="grid md:grid-cols-2 mt-12 space-y-6 md:space-y-0 py-6">
+        <p class="mainFont text-black text-[22px] md:text-[36px] text-center md:text-left font-semibold md:font-medium">
+          Жойномоз</p>
+        <p class="mainFont text-black __qator3 text-justify">Чапа́н — кафтан, который мужчины и женщины носят поверх
+          одежды, как
+          правило, в течение холодных зимних месяцев. Он популярен в Центральной Азии, включая Узбекистан.</p>
+      </div>
+      <div class="chapans grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon1.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/ton1.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon3.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 space-y-6 md:space-y-0 mt-12 py-6">
+        <p class="mainFont text-black text-[22px] md:text-[36px] text-center md:text-left font-semibold md:font-medium">
+          Чакмон</p>
+        <p class="mainFont text-black  __qator3 text-justify">Чапа́н — кафтан, который мужчины и женщины
+          носят
+          поверх
+          одежды, как
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis velit amet delectus maxime modi
+          doloribus. Asperiores quasi ipsa incidunt veniam tempore adipisci cumque necessitatibus nemo, reiciendis
+          dolore numquam consequatur omnis recusandae, aliquid commodi libero facere. Ullam autem nostrum
+          reprehenderit?
+          правило, в течение холодных зимних месяцев. Он популярен в Центральной Азии, включая Узбекистан.</p>
+      </div>
+      <div class="chapans grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon1.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon2.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100">
+          <div class="chapanPhoto h-[320px] md:h-[350px] w-full relative object-cover">
+            <a href="#"><img class="absolute top-0 left-0 h-full w-full object-cover" src="./img/chopon3.png"
+                alt="Chopon"></a>
+          </div>
+          <div class="chapanInfo flex flex-col justify-center items-center py-2">
+            <p class="mainFont text-black __qator1">Зар-зар чопон</p>
+            <a class="mainFont text-[14px] __qator1 hover:underline" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <hr>
+  <footer>
+    <div class="flex footer__div w-10/12 mx-auto justify-between py-6 items-center">
+      <div>
+        <p class="linkHover footer__p __qator1">Магазин национальной одежды</p>
+      </div>
+      <div>
+        <img class="footer__img" src="./img/Chopon.png" alt="chopon_Logo">
+      </div>
+      <div>
+        <a href="tel:+998909899889" class="linkHover __qator1 block footer__a" id="number">+998 90 989 9889
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
